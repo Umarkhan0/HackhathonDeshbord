@@ -12,7 +12,6 @@ import AssignmentIndIcon from "@mui/icons-material/AssignmentInd";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import IconButton from "@mui/material/IconButton";
 import AddCircleOutlineRoundedIcon from "@mui/icons-material/AddCircleOutlineRounded";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -23,6 +22,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { Button, Stack } from "@mui/material";
+import TransitionsModal from "./modal.jsx";
 
 const drawerWidth = 240;
 
@@ -137,23 +137,19 @@ function ResponsiveDrawer(props) {
             </div>
           </Box>
           <div className=" flex justify-end items-center w-full">
-            <Stack spacing={2} direction="row">
-              <Button
+          
+              <Box
                 variant="contained"
                 style={{
                   backgroundColor: "#fff",
                   color: "#0073c9",
                 }}
               >
-                <AddCircleOutlineRoundedIcon
-                  style={{
-                    color: "#0073c9",
-                    marginRight: 3,
-                  }}
-                />
-                Add Student
-              </Button>
-            </Stack>
+                
+                        <TransitionsModal />
+                        
+              </Box>
+           
           </div>
         </Toolbar>
       </AppBar>
@@ -217,7 +213,7 @@ function ResponsiveDrawer(props) {
             Passwrod
           </p>
         </div>
-        <CardUser id={1} img={"https://assets.stickpng.com/images/585e4bcdcb11b227491c3396.png"} name={"umar"} password={123456}  />
+        <CardUser id={1} img={"https://tse1.mm.bing.net/th?id=OIP.4ba0a4U7RchHI-HWDSrsiwHaHa&pid=Api&P=0&h=220"} courseName={"web and ap development"} name={"umar"} password={123456}  />
       </Box>
     </Box>
   );

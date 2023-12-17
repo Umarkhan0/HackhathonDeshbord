@@ -1,0 +1,55 @@
+.profile-main-container {
+    height: 97vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contant-container {
+    height: 400px;
+    width: 300px;
+    border: 2px solid #fff;
+    background-color: #000;
+    box-shadow: 5px 6px 6px #fff;
+    border-radius: 7px;
+    visibility: hidden;
+}
+
+.picture {
+    margin: 10px;
+    height: 100px;
+    width: 120px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.image-get {
+    display: none;
+}
+
+#customButton {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pro-img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    object-fit: cover;
+}
+
+.picture-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
